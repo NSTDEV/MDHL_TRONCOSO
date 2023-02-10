@@ -6,16 +6,22 @@
 
 body {
     font-size: 1rem;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-main {
-    margin-block: 2rem;
+a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: 1px 1px white;
 }
 
 nav {
-    margin-left: .5rem;
+    top: 0;
+    padding: 3rem 1rem;
+    height: 100%;
     position: absolute;
+    background-color: white;
     width: max-content;
 }
 
@@ -27,12 +33,15 @@ nav a {
 }
 
 a:hover {
-    text-decoration: none;
-    color: black;
+    color: yellow;
+    text-shadow: 2px 2px black;
 }
 
 article {
     font-weight: 100;
+    padding:.4rem;
+    width: fit-content;
+    background-color: rgb(0, 0, 0, .5);
     margin-bottom: 2rem;
 }
 
@@ -49,7 +58,8 @@ p {
     position: relative;
     width: 100%;
     min-height: 50vh;
-    margin-top: 1rem;
+    margin-top: .5rem;
+    padding: 2rem 0 0;
 }
 
 #banner {
@@ -60,15 +70,20 @@ p {
 
 #title-name {
     font-size: 3rem;
-    margin: .5rem;
+    color: yellow;
+    text-shadow: 2px 2px black;
+    background-color: rgb(0, 0, 0, .5);
+    margin: .5rem .5rem .5rem 0;
+    padding: .4rem;
     position: absolute;
     top: 0;
     font-weight: lighter;
 }
 
 .sub-title {
+    color: yellow;
     width: 100%;
-    padding: .5rem;
+    padding: .8rem;
     text-align: center;
     display: inline-block;
     background-color: black;
@@ -90,6 +105,7 @@ p {
 
 .info {
     margin-inline: 12rem 0;
+    color: white;
 }
 
 .parraf {
@@ -97,9 +113,15 @@ p {
     margin-inline: 12rem 0;
 }
 
+.parraf h2 {
+    text-shadow: 2px 2px white;
+}
+
 .parraf p {
-    margin-left: 1rem;
     text-indent: 20px;
+    padding: .4rem;
+    color: white;
+    background-color: rgb(0, 0, 0, .5);
 }
 
 .contact {
@@ -109,16 +131,16 @@ p {
 
 .contact p {
     margin: 0;
+    width: fit-content;
+    padding: .3rem 1rem;
+    background-color: rgb(0, 0, 0, .5);
 }
 
 .second-img {
     position: absolute;
-    display: inline-block;
-    margin: 0 .5rem;
     top: 0;
-    right: 5%;
-    height: 80%;
-    width: 18%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
 }
