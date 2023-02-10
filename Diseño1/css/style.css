@@ -37,6 +37,10 @@ a:hover {
     text-shadow: 2px 2px black;
 }
 
+section {
+    margin-block: 0 1.5rem;
+}
+
 article {
     font-weight: 100;
     padding:.4rem;
@@ -83,9 +87,10 @@ p {
 .sub-title {
     color: yellow;
     width: 100%;
-    padding: .8rem;
+    padding: .5rem;
     text-align: center;
     display: inline-block;
+    font-size: 2rem;
     background-color: black;
 }
 
@@ -114,10 +119,12 @@ p {
 }
 
 .parraf h2 {
+    font-size: 2rem;
     text-shadow: 2px 2px white;
 }
 
 .parraf p {
+    font-size: 1.3rem;
     text-indent: 20px;
     padding: .4rem;
     color: white;
