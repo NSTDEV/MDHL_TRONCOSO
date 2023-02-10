@@ -93,19 +93,13 @@ p {
     background-color: black;
 }
 
-.div-section {
-    display: inline-block;
-    margin: 0 auto;
-}
-
 .info {
-    margin-inline: 12rem 0;
+    margin-inline: 10rem 0;
 }
 
 .parraf {
     width: 60%;
-    margin-inline: 10rem;
-    margin-top: 1rem;
+    margin-inline: 10rem 0;
 }
 
 .parraf p {
@@ -116,6 +110,10 @@ p {
 .contact {
     margin-inline: 10rem 0;
     font-size: 1.4rem;
+}
+
+.contact p {
+    margin: 0;
 }
 
 .second-img {
