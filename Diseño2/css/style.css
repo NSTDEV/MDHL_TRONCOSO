@@ -99,8 +99,7 @@ p {
 }
 
 .info {
-    margin-inline: 15rem;
-    width: 70%;
+    margin-inline: 12rem 0;
 }
 
 .parraf {
@@ -115,7 +114,7 @@ p {
 }
 
 .contact {
-    margin-inline: 10rem;
+    margin-inline: 10rem 0;
     font-size: 1.4rem;
 }
 
