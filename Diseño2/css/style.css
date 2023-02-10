@@ -46,13 +46,14 @@ a:hover {
 }
 
 article {
+    font-size: 1.3rem;
     font-weight: 100;
     margin-bottom: 2rem;
 }
 
 h3{
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 100;
 }
 
@@ -115,7 +116,12 @@ p {
     margin-inline: 10rem 0;
 }
 
+.parraf h2 {
+    font-size: 2rem;
+}
+
 .parraf p {
+    font-size: 1.3rem;
     margin: 0 0 2rem 1rem;
     text-indent: 20px;
 }
@@ -126,7 +132,7 @@ p {
 
 .contact {
     margin-inline: 10rem 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .contact p {
