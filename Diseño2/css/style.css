@@ -33,7 +33,7 @@ nav a {
     text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
     background-color: rgba(0, 145, 0, 1);
 }
 
