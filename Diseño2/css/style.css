@@ -4,6 +4,129 @@
     box-sizing: border-box;
 }
 
-h1 {
+body {
     font-size: 1rem;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+main {
+    margin-block: 2rem;
+}
+
+nav {
+    margin-right: .5rem;
+    width: max-content;
+    position: absolute;
+    top: -5%;
+    right: 0;
+    z-index: 3;
+}
+
+nav a {
+    font-size: 1.2rem;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 0 rgb(0, 0, 0, .7);
+    background-color: rgb(29, 107, 250);
+    margin-left: .5rem;
+    padding: .3rem .7rem;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgba(0, 145, 0, 1);
+}
+
+article {
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+h3{
+    font-style: italic;
+}
+
+p {
+    margin: 0 0 .5rem 1rem;
+}
+
+.wrapp {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+}
+
+#banner {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-and-nav {
+    isolation: isolate;
+    position: relative;
+}
+
+#title-name {
+    font-size: 3rem;
+    margin: .5rem;
+    font-weight: lighter;
+}
+
+.sub-title {
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    margin: -.3rem auto auto;
+}
+
+#logo {
+    margin: 1rem 1rem;
+    position: absolute;
+    display: inline-block;
+    width: 6rem;
+    background-color: black;
+}
+
+.div-section {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.info {
+    margin-inline: 15rem;
+    width: 70%;
+}
+
+.parraf {
+    width: 60%;
+    margin-inline: 10rem;
+    margin-top: 1rem;
+}
+
+.parraf p {
+    margin-left: 1rem;
+    text-indent: 20px;
+}
+
+.contact {
+    margin-inline: 10rem;
+    font-size: 1.4rem;
+}
+
+.second-img {
+    position: absolute;
+    display: inline-block;
+    margin: 0 .5rem;
+    top: 0;
+    right: 0;
+    height: 80%;
+    width: 18%;
+    object-fit: cover;
+    z-index: -1;
 }
