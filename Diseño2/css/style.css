@@ -18,6 +18,7 @@ a {
     text-shadow: 2px 2px black;
     text-decoration: none;
     padding: .3rem 1rem;
+    transition: ease-in-out .3s;
 }
 
 nav {
@@ -61,15 +62,8 @@ p {
     margin: 0 0 .5rem 1rem;
 }
 
-.wrapp {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    min-height: 50vh;
-}
-
 #banner {
-    height: 40vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50px;
@@ -77,6 +71,7 @@ p {
 
 .banner-and-nav {
     isolation: isolate;
+    height: 40vh;
     position: relative;
 }
 
@@ -97,6 +92,13 @@ p {
     color: black;
     background-color: yellow;
     border: 3px solid black;
+}
+
+.wrapp {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
 }
 
 #logo {
@@ -141,8 +143,6 @@ p {
 
 .second-img {
     position: absolute;
-    bottom: 1;
-    right: 0;
     border-radius: 25px;
     border: 3px solid black;
     height: 40%;
