@@ -7,7 +7,8 @@
 body {
     font-size: 1rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: block;
+    background-color: #1A1A1D;
+    color: #FEFFFF;
 }
 
 main {
@@ -17,36 +18,37 @@ main {
 }
 
 a {
-    color: yellow;
-    text-shadow: 2px 2px black;
+    color: #C3073F;
+    text-shadow: 1px 1px #6f2232;
     text-decoration: none;
     padding: .3rem 1rem;
     transition: ease-in-out .3s;
 }
 
 nav {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     width: max-content;
+    display: flex;
     position: absolute;
     top: -5%;
     right: 0;
-    z-index: 3;
 }
 
 nav a {
     font-size: 1.2rem;
     border-radius: 15px;
-    color: white;
-    border: 1px solid black;
-    box-shadow: 2px 2px 0 rgb(0, 0, 0, .7);
+    box-shadow: 3px 2px 0 rgb(0, 0, 0, .7);
+    border: 1px solid #FEFFFF;
     background-color: black;
     margin-left: .5rem;
 }
 
 a:hover {
     text-shadow: none;
-    color: black;
-    background-color: yellow;
+    color: #FEFFFF;
+    background-color: #C3073F;
+    z-index: 1;
+    transform: scale(1.1);
 }
 
 article {
@@ -57,7 +59,6 @@ article {
 
 h3{
     font-style: italic;
-    font-size: 2rem;
     font-weight: 100;
 }
 
@@ -69,19 +70,21 @@ p {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border: 3px solid #FEFFFF;
     border-radius: 50px;
 }
 
 .banner-and-nav {
     isolation: isolate;
-    height: 40vh;
+    height: 35vh;
     position: relative;
 }
 
 #title-name {
     font-size: 3rem;
-    margin: .5rem;
-    text-shadow: 1px 2px yellow;
+    margin: 1rem;
+    color: #C3073F;
+    text-shadow: 1px 2px #6f2232;
     font-weight: lighter;
 }
 
@@ -94,38 +97,38 @@ p {
     padding: .8rem;
     border-radius: 15px;
     text-align: center;
-    color: black;
-    background-color: yellow;
-    border: 3px solid black;
+    text-shadow: 1px 1px #FEFFFF;
+    color: #C3073F;
+    box-shadow: 3px 2px 0 rgb(0, 0, 0, .7);
+    background-color: #0B0B0B;
+    border: 3px solid #C3073F;
 }
 
 .wrapp {
-    display: inline-block;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #logo {
     margin-inline: 3% 5%;
     border-radius: 15px;
     width: 6rem;
-    float: inline-start;
+    height: 6rem;
+    border: 3px solid #C3073F;
     background-color: black;
 }
 
-.info {
-    display: inline-block;
-}
-
-.parraf {
+.p-container {
     width: 70%;
-    display: inline-block;
 }
 
-.parraf h2 {
+.p-container h2, h3 {
+    color: #C3073F;
     font-size: 2rem;
 }
 
-.parraf p {
+.p-container p {
     font-size: 1.3rem;
     margin: 0 0 2rem 1rem;
     text-indent: 20px;
@@ -136,7 +139,6 @@ p {
 }
 
 .contact {
-    display: inline-block;
     font-size: 1.6rem;
 }
 
@@ -144,11 +146,142 @@ p {
     margin: 0;
 }
 
+.info-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.info-title h4{
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.info-title h3{
+    color: #FEFFFF;
+    font-size: 1.8rem;
+    font-style: normal;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+span {
+    color: #6f2232;
+    text-shadow: 1px 1px #0B0B0B;
+}
+
+.nested-l {
+    list-style-type: lower-latin;
+}
+
+.nested-l li::marker{
+    color: #FEFFFF;
+    list-style-type: lower-latin;
+}
+
+dt {
+    color: #C3073F;
+    font-size: 2rem;
+    margin-block: .5rem;
+}
+
+dd {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+li::marker {
+    color: #C3073F;
+}
+
 .second-img {
     border-radius: 25px;
-    border: 3px solid black;
-    height: 30vh;
+    border: 3px solid #FEFFFF;
+    box-shadow: 3px 2px 0 rgb(0, 0, 0, .7);
+    height: 20vh;
     width: 96%;
     margin-inline: 2%;
     object-fit: cover;
+}
+
+.active {
+    text-shadow: none;
+    color: #FEFFFF;
+    background-color: #C3073F;
+    transform: scale(1.1);
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1rem;
+}
+
+.game-info h2 {
+    font-size: 2rem;
+    color: #C3073F;
+    text-align: center;
+}
+
+tr,
+th,
+td {
+    border: 2px solid;
+}
+
+td,
+th {
+    padding: .5rem;
+}
+
+th {
+    color: #C3073F;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+em {
+    text-decoration: underline;
+}
+
+.data-text {
+    margin-bottom: 2rem;
+}
+
+.contact-data {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.contact-data p {
+    margin: 1rem 0;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data p,
+.contact-data p {
+    margin-top: 0;
 }

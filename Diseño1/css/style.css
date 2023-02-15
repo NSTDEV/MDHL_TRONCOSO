@@ -7,48 +7,58 @@
 body {
     font-size: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #25274D;
+    color: #FEFFFF;
+}
+
+main {
+    display: flex;
 }
 
 a {
-    color: black;
     font-weight: bolder;
     text-decoration: none;
-    text-shadow: 1px 1px white;
+    padding: .3rem;
+    color: #FEFFFF;
+    text-shadow: 0 1px #3AAFA9;
+    background-color: transparent;
+    transition: ease-in-out .3s;
 }
 
 nav {
     top: 0;
-    padding: 3rem 1rem;
+    padding: 2rem 2.5rem 2rem 1rem;
     height: 100%;
-    float: inline-start;
-    width: 20%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
 
 nav a {
     width: max-content;
     font-size: 1.2rem;
-    display: block;
-    margin: 0 .5rem 4rem;
+    padding: .5rem;
+    margin: 0 .5rem 1rem;
 }
 
 a:hover {
-    color: yellow;
-    text-shadow: 2px 2px black;
-}
-
-section {
-    margin-block: 0 1.5rem;
+    border-radius: 0 15px 15px 0;
+    color: #FEFFFF;
+    background-color: #0B0B0B;
+    transform: scale(1.2);
 }
 
 article {
     font-weight: 100;
-    padding:.4rem;
+    font-size: 1.2rem;
+    padding: .5rem;
     width: fit-content;
-    background-color: rgb(0, 0, 0, .5);
+    background-color: rgb(0, 0, 0, .7);
+    border-radius: 0 15px 15px 0;
     margin-bottom: 2rem;
 }
 
-h3{
+h3 {
     font-style: italic;
 }
 
@@ -56,25 +66,18 @@ p {
     margin: 0 0 .5rem 1rem;
 }
 
-.wrapp {
-    position: relative;
-    width: 80%;
-    min-height: 45vh;
-    margin-top: .5rem;
-    float: right;
-}
-
 #banner {
-    height: 40vh;
+    height: 35vh;
     width: 100%;
     object-fit: cover;
 }
 
 #title-name {
     font-size: 3rem;
-    color: yellow;
-    text-shadow: 2px 2px black;
-    background-color: rgb(0, 0, 0, .5);
+    color: #FEFFFF;
+    text-shadow: 2px 2px #3AAFA9;
+    background-color: rgb(0, 0, 0, .7);
+    border-radius: 0 15px 15px 0;
     margin: .5rem .5rem .5rem 0;
     padding: .4rem;
     position: absolute;
@@ -83,56 +86,66 @@ p {
 }
 
 .sub-title {
-    color: yellow;
     width: 100%;
     padding: .5rem;
     text-align: center;
-    display: inline-block;
     font-size: 2rem;
-    background-color: black;
+    color: #FEFFFF;
+    text-shadow: 1px 1px #3AAFA9;
+    border-block: 3px solid #3AAFA9;
+    background-color: #0B0B0B;
 }
 
-.logo-and-title {
-    color: white;
+.logo-and-subtitle {
+    margin-top: -5px;
+    color: #FEFFFF;
     width: 100%;
+    display: flex;
 }
 
 #logo {
     position: absolute;
+    align-self: center;
     right: 10%;
-    transform: translateY(-25%);
     width: 6rem;
-    border: 2px solid white;
-    background-color: black;
+    height: 6rem;
+    border: 2px solid #3AAFA9;
+    background-color: #0B0B0B;
+}
+
+.wrapp {
+    position: relative;
+    width: 100%;
+    margin-top: .5rem;
 }
 
 .info {
     padding: 2rem 1rem 0;
-    display: inline-block;
-    color: white;
+    color: #FEFFFF;
 }
 
-.parraf {
+.p-container {
     width: 90%;
     padding: 2rem 1rem 0;
-    display: inline-block;
 }
 
-.parraf h2 {
+.p-container h2,
+.game-info h2 {
     font-size: 2rem;
-    text-shadow: 2px 2px white;
+    color: #3AAFA9;
+    text-shadow: 1px 2px #0B0B0B;
 }
 
-.parraf p {
+.p-container p {
     font-size: 1.3rem;
     text-indent: 20px;
-    padding: .4rem;
-    color: white;
-    background-color: rgb(0, 0, 0, .5);
+    padding: .5rem;
+    color: #FEFFFF;
+    background-color: rgb(0, 0, 0, .7);
+    border-radius: 0 15px 15px 0;
 }
 
 .contact {
-    display: inline-block;
     padding: 2rem 1rem 0;
     font-size: 1.4rem;
 }
@@ -140,17 +153,152 @@ p {
 .contact p {
     margin: 0;
     width: fit-content;
-    padding: .3rem 1rem;
-    background-color: rgb(0, 0, 0, .5);
+    padding: .5rem 1rem;
+    background-color: rgb(0, 0, 0, .7);
+    border-radius: 0 15px 15px 0;
 }
+
+.contact a {
+
+    color: #3AAFA9;
+    text-shadow: 0 1px #0B0B0B;
+}
+
+.info-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.info-title h4 {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.info-title h3 {
+    color: #FEFFFF;
+    font-size: 1.8rem;
+    font-style: normal;
+}
+
+.rules-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+span {
+    color: #3AAFA9;
+    text-shadow: 1px 1px #0B0B0B;
+}
+
+.nested-l {
+    list-style-type: lower-latin;
+    text-indent: 20px;
+}
+
+dt {
+    color: #3AAFA9;
+    font-size: 2rem;
+    margin-block: .5rem 0;
+}
+
+dd,
+.game-info {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    list-style-position: inside;
+}
+
+li::marker {
+    color: #3AAFA9;
+}
+
 
 .second-img {
     position: absolute;
     top: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     margin-right: .5rem;
     object-fit: cover;
     z-index: -1;
-    right: 0;
+}
+
+.active {
+    color: #FEFFFF;
+    text-shadow: 0 1px #0B0B0B;
+    border-radius: 0 15px 15px 0;
+    background-color: #3AAFA9;
+    transform: scale(1.2);
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.game-info h2 {
+    text-align: center;
+}
+
+tr,
+th,
+td {
+    border: 2px solid;
+}
+
+td,
+th {
+    padding: .5rem;
+}
+
+th {
+    color: #3AAFA9;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+em {
+    text-decoration: underline;
+}
+
+.data-text {
+    margin-bottom: 2rem;
+}
+
+.contact-data {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.contact-data p {
+    margin: 1rem 0;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data p,
+.contact-data p {
+    margin-top: 0;
 }
