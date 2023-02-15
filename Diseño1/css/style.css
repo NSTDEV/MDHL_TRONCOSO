@@ -14,7 +14,6 @@ body {
 main {
     display: flex;
 }
-
 a {
     font-weight: bolder;
     text-decoration: none;
@@ -113,8 +112,29 @@ p {
     background-color: #0B0B0B;
 }
 
+.wrapper {
+    margin: 1.5rem 1rem;
+    margin-left: 0;
+    width: 90%;
+    min-height: 55vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#in {
+    background-image: url("../assets/hockey_1.jpg");
+}
+
+#ab {
+    background-image: url("../assets/hockey_2.jpg");
+}
+
+#co {
+    background-image: url("../assets/hockey_3.jpg");
+}
+
 .wrapp {
-    position: relative;
     width: 100%;
     margin-top: .5rem;
 }
@@ -216,18 +236,6 @@ li {
 
 li::marker {
     color: #3AAFA9;
-}
-
-
-.second-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    margin-right: .5rem;
-    object-fit: cover;
-    z-index: -1;
 }
 
 .active {
