@@ -35,13 +35,13 @@ nav {
 }
 
 nav a {
-    width: max-content;
+    width: 10rem;
     font-size: 1.2rem;
     padding: .5rem;
     margin: 0 .5rem 1rem;
 }
 
-a:hover {
+a:hover, .subt-button:hover {
     border-radius: 0 15px 15px 0;
     color: #3AAFA9;
     text-shadow: 0 1px #FEFFFF;
@@ -255,7 +255,7 @@ li::marker {
     flex-direction: column;
     width: 90%;
     gap: 1rem;
-    margin: 2rem auto;
+    margin: 3rem auto;
 }
 
 tr,
@@ -328,8 +328,10 @@ table {
     flex-wrap: wrap;
 }
 
-.map-org h5:hover {
+.map-org iframe:hover {
     color: #3AAFA9;
+    border: 3px solid #FEFFFF;
+    transform: scale(1.1);
 }
 
 .map-org div {
@@ -342,6 +344,8 @@ table {
 iframe {
     width: 100%;
     height: 70%;
+    border: 3px solid #3AAFA9;
+    transition: ease-in-out .3s;
     border-radius: 15px;
 }
 
@@ -354,6 +358,10 @@ form {
 fieldset {
     border: none;
     margin-block: 2rem;
+}
+
+fieldset p {
+    width: 80%;
 }
 
 legend, h5{
@@ -400,8 +408,8 @@ option {
     background-color: #3AAFA9;
     border-color: #FEFFFF;
     border-radius: 15px;
-    width: 30%;
-    margin: 1rem auto;
+    width: 20%;
+    margin: 2rem 1rem;
     transition: ease-in-out .3s;
     display: inline;
 }
