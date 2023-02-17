@@ -12,26 +12,27 @@
 
 <body>
     <header>
+        <img src="./assets/design1_image1.jpg" alt="MDHL Banner" id="banner">
         <h1 id="title-name">Mighty Ducks Hockey League</h1>
-        <div class="banner-and-nav">
-            <img src="./assets/design2_image1.jpg" alt="MDHL Banner" id="banner">
-            <nav>
-                <a href="./index.html">Home</a>
-                <a href="./about_MDHL.html">About MDHL</a>
-                <a href="./game_info.html">Information</a>
-                <a href="./rules.html">Rules</a>
-                <a href="./registration.html" class="active">Register</a>
-                <a href="./contact.html">Contact</a>
-            </nav>
+        <div class="logo-and-subtitle">
+            <h2 class="sub-title">Registration Form</h2>
+            <img src="./assets/Logo_Mighty_ducks-01.png" alt="League Logo" id="logo">
         </div>
-        <h2 class="sub-title">Registration Form</h2>
     </header>
 
     <main>
-        <div class="wrapp">
-            <img src="./assets/Logo_Mighty_ducks-01.png" alt="League Logo" id="logo">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about_MDHL.html">About MDHL</a>
+            <a href="./game_info.html">Information</a>
+            <a href="./rules.html">Rules</a>
+            <a href="./registration.html" class="active">Register</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
 
-            <div class="game-info size-wrapper">
+        <div class="wrapper">
+
+            <div class="game-info">
                 <h2>Registration Form</h2>
 
                 <form action="show_data.html" method="get">
@@ -151,7 +152,7 @@
                             that I have read the cancellation policy and agree to its terms.</p>
                     </fieldset>
 
-                    <div class="firms">
+                    <div>
                         <label for="parent">Parent/Guardian Signature:</label>
                         <input type="text" name="parent" id="parent" placeholder="Parent" required>
 
@@ -159,12 +160,10 @@
                         <input type="date" name="f-date" id="f-date" required>
                     </div>
 
-                    <input type="submit" class="subt-button" value="Submit">
                     <input type="reset" class="subt-button" value="Reset">
+                    <input type="submit" class="subt-button" value="Submit">
                 </form>
             </div>
-
-            <img src="./assets/hockey_3.jpg" alt="Hockey player" class="second-img">
         </div>
     </main>
 
