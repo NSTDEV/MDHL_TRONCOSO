@@ -224,6 +224,10 @@ li::marker {
     transform: scale(1.1);
 }
 
+.size-wrapper {
+    width: 70%;
+}
+
 .game-info {
     display: flex;
     flex-direction: column;
@@ -366,7 +370,7 @@ option {
 }
 
 .firms {
-    display: flex;
+    display: inline-block;
 }
 
 .form-f {
